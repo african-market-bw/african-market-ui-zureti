@@ -110,10 +110,6 @@ img {
     width: 100%;
   }
 }
-.container {
-  width: 100%;
-  margin: auto;
-}
 .top {
   justify-content: center;
 }
@@ -230,15 +226,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+footer {
+  height: 125px;
+  background-color: #1A1E23;
+  color: #e84c3d;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background-color: #e84c3d;
+  background-color: #1A1E23;
+  color: #e84c3d;
 }
 .footer p {
   justify-content: center;
   text-align: center;
-  color: #1A1E23;
+  color: #e84c3d;
   font-size: 1.6rem;
   padding: 20px;
+}
+.footer-text {
+  color: #e84c3d;
 }

@@ -1,0 +1,26 @@
+.section {
+    width: 70%;
+    margin: 45px auto;
+    border: 1px solid #e84c3d;
+    box-shadow: 1px 1px 5px #e84c3d;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10rem;
+    
+    @media @mobile {
+        .container() {
+            display: none;
+        }
+    }
+}
+
+    .section .box {
+        padding: 40px;
+    }
+
+        .section .box .box-title {
+            font-size: 24px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+
