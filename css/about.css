@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs {
+  width: 100%;
+  height:70rem;
+}
+.tabs-item-image,
+.tabs-item-title,
+.tabs-item-description{
+    display: inline;
+}
+    .tabs-item-title,
+    .tabs-item-description{
+       position:absolute;
+       margin-left:5rem;
+       width:35%;
+    }
+        .tabs-item-title{
+            margin-top:-1rem;
+        }
+.tabs-item-description{
+    margin-top:5rem;
+    width:25%;
+}
+
+.tabs .tabs-items {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+.tabs .tabs-item {
+  display: none;
+  width: 75%;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: flex;
+  background-color: #931d25;
+}
+.tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: #931d25;
+  border-right: 1px solid white;
+  color: #ffffff;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: #be2530;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid #931d25;
+  background-color: #ffffff;
+  color: black;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: #ffffff;
+}
+body {
+  box-sizing: border-box;
+  min-width: 300px;
+  margin: 0;
+}
+.header-container {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #931d25;
+}
+.header-container .header {
+  height: 50px;
+}
+.section {
+  width: 70%;
+  margin: 45px auto;
+  
+  border: 1px solid #931d25;
+  box-shadow: 1px 1px 5px #931d25;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top:10rem;
+}
+.section .box {
+
+  padding: 40px;
+}
+
+.section .box .box-title {
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+#footer{
+    padding-bottom:1rem;
+    padding-top:3rem;
+    background-color:red;}
+.footer-text{
+    text-align:center;
+}
