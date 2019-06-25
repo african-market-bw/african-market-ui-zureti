@@ -22,127 +22,42 @@ img {
   margin-left: -30rem;
   margin-top: -30rem;
 }
+.intro {
+  background-image: url("http://sautiafrica.org/wp-content/uploads/2018/03/MarketTraining1-e1520025521838.jpg");
+  height: 36rem;
+}
+@media ( max-width: 500px ) {
+  .intro {
+    justify-content: center;
+  }
+}
+.mid {
+  justify-content: center;
+  display: block;
+  text-align: justify;
+}
+mid-p {
+  margin: 1rem;
+  text-align: justify;
+}
 .box {
   padding: 0 50px;
 }
 .home .container home {
   border-top: 2px dashed #C0C0C0;
 }
-.home .content-section {
-  margin: 30px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  color: #212529;
+.heading {
+  color: white;
+  margin-left: 45rem;
+  margin-top: -5rem;
 }
-@media ( max-width: 500px ) {
-  .home .content-section {
-    Flex-direction: column;
-    Flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
-    width: 480px;
-  }
+.jumbotron {
+  margin-left: 15rem;
+  width: 60%;
 }
-.home .content-section .text-content {
-  width: 48%;
-  padding-right: 1%;
-  flex-wrap: wrap;
-  padding-top: 10px;
-  color: #212529;
-}
-@media ( max-width: 500px ) {
-  .home .content-section .text-content {
-    width: 85%;
-    text-align: justify;
-    flex-wrap: wrap;
-  }
-}
-.home .content-section .img-content {
-  width: 48%;
-  padding-left: 1%;
-  flex-wrap: wrap;
-}
-@media ( max-width: 500px ) {
-  .home .content-section .img-content {
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-}
-.home .content-section .img-content img {
-  border-radius: 10px;
-}
-.home .inverse-content {
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
-}
-@media ( max-width: 500px ) {
-  .home .inverse-content {
-    flex-direction: column-reverse;
-  }
-}
-.home .inverse-content .text-content {
-  padding-left: 1%;
-  padding-right: 0;
-  color: #212529;
-}
-@media ( max-width: 500px ) {
-  .home .inverse-content .text-content {
-    width: 85%;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-around;
-  }
-}
-.home .inverse-content .img-content {
-  padding-right: 1%;
-  padding-left: 0;
-}
-@media ( max-width: 500px ) {
-  .home .inverse-content .img-content {
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-}
-.home .content-destination {
-  width: 75%;
-  margin: 0 auto 30px;
-}
-@media ( max-width: 500px ) {
-  .home .content-destination {
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    flex-flow: column;
-  }
-}
-.home .content-destination img {
-  border-radius: 10px;
-}
-.home .content-pick {
-  padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.home .content-pick .destination {
-  display: inline-block;
-  width: 30%;
-  margin-bottom: 30px;
-}
-@media ( max-width: 500px ) {
-  .home .content-pick .destination {
-    width: 100%;
-    flex-direction: column;
-  }
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .btn {
   justify-content: center;
@@ -156,81 +71,115 @@ img {
   align-items: center;
   border-radius: 5px;
   background-color: #17A2B8;
-  color: #FFFFFF;
+  color: #fafafa;
   width: 400px;
   height: 3rem;
 }
-.signup-btn {
+@media mobile {
+  .btn {
+    width: 100%;
+  }
+}
+.signup {
   background-color: #e84c3d;
   color: white;
   justify-content: center;
   content-align: center;
   display: flex;
 }
-ul {
-  margin-left: 50rem;
-}
-section {
-  background-image: url("http://sautiafrica.org/wp-content/uploads/2018/03/MarketTraining1-e1520025521838.jpg");
-  padding: 25rem;
-  margin-top: -5rem;
-}
-.top {
-  width: 100%;
-  margin: 10px 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #1A1E23;
-}
 @media ( max-width: 500px ) {
-  .top {
-    flex-direction: column;
-  }
-}
-.top h1 {
-  justify-content: flex-start;
-  width: 50%;
-}
-@media ( max-width: 500px ) {
-  .top h1 {
-    margin-bottom: 15px;
-    margin-right: -30px;
-  }
-}
-.top .logo {
-  color: #fafafa;
-}
-.top .header {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-@media ( max-width: 500px ) {
-  .top .header {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  .signup {
     width: 100%;
   }
 }
-.top .header a {
-  color: #fafafa;
-  text-decoration: none;
-  font-size: 1.5rem;
-  word-spacing: 5px;
-  padding: 0 5px;
+.login {
+  background-color: #1A1E23;
+  color: #e84c3d;
+  justify-content: center;
+  content-align: center;
+  display: flex;
 }
-.top .header a:hover {
+@media ( max-width: 500px ) {
+  .login {
+    width: 100%;
+  }
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+.top {
+  justify-content: center;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media ( max-width: 500px ) {
+  header header {
+    justify-content: center;
+  }
+}
+header nav {
+  margin-top: 40px;
+  width: 768px;
+  padding: 0 30px;
+  justify-content: space-between;
+  display: flex;
+}
+@media ( max-width: 500px ) {
+  header nav {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+@media ( max-width: 500px ) {
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+    background-color: #1A1E23;
+    color: #fafafa;
+  }
+}
+header nav a:hover {
   text-decoration: underline;
   color: #e84c3d;
 }
-.banner {
-  height: 500px;
-  width: 100%;
-  display: flex;
-  background-image: url("http://sautiafrica.org/wp-content/uploads/2018/03/MarketTraining1-e1520025521838.jpg");
+@media ( max-width: 500px ) {
+  header nav a:hover {
+    color: #e84c3d;
+  }
+}
+@media ( max-width: 500px ) {
+  header nav a:first-child {
+    border-top: 1px solid gray;
+  }
+}
+header .logo {
+  order: -1;
+  display: block;
+  margin: 30px auto 0;
+}
+@media ( max-width: 500px ) {
+  header .logo header .logo {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+  }
 }
 * {
   box-sizing: border-box;
@@ -240,14 +189,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -264,7 +213,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
-  color: #212529;
+  color: #1A1E23;
 }
 img {
   max-width: 100%;
@@ -278,11 +227,12 @@ img {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background-color: #e84c3d;
 }
 .footer p {
+  justify-content: center;
   text-align: center;
-  color: #212529;
+  color: #1A1E23;
   font-size: 1.6rem;
   padding: 20px;
 }
