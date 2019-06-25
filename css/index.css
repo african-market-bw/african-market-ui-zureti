@@ -160,13 +160,28 @@ img {
   width: 400px;
   height: 3rem;
 }
+.signup-btn {
+  background-color: #e84c3d;
+  color: white;
+  justify-content: center;
+  content-align: center;
+  display: flex;
+}
+ul {
+  margin-left: 50rem;
+}
+section {
+  background-image: url("http://sautiafrica.org/wp-content/uploads/2018/03/MarketTraining1-e1520025521838.jpg");
+  padding: 25rem;
+  margin-top: -5rem;
+}
 .top {
   width: 100%;
   margin: 10px 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: 3px solid red;
+  background-color: #1A1E23;
 }
 @media ( max-width: 500px ) {
   .top {
@@ -184,33 +199,7 @@ img {
   }
 }
 .top .logo {
-  -webkit-animation: fade-in 0.2s linear infinite alternate;
-  -moz-animation: fade-in 0.2s linear infinite alternate;
-  animation: fade-in 0.2s linear infinite alternate;
-}
-@-moz-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  color: #fafafa;
 }
 .top .header {
   width: 50%;
@@ -227,14 +216,15 @@ img {
   }
 }
 .top .header a {
-  color: black;
+  color: #fafafa;
   text-decoration: none;
   font-size: 1.5rem;
   word-spacing: 5px;
+  padding: 0 5px;
 }
 .top .header a:hover {
   text-decoration: underline;
-  color: #17A2B8;
+  color: #e84c3d;
 }
 .banner {
   height: 500px;
