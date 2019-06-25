@@ -35,16 +35,22 @@ img {
   justify-content: center;
   display: block;
   text-align: justify;
+  background-color: #1A1E23;
+  color: #fafafa;
 }
-mid-p {
+.mid-p {
   margin: 1rem;
   text-align: justify;
+  color: #fafafa;
 }
-.box {
-  padding: 0 50px;
-}
-.home .container home {
-  border-top: 2px dashed #C0C0C0;
+.directory {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: block;
+  text-align: justify;
+  margin: 5px 5px;
+  background-image: url("https://i.ibb.co/cFTPFfP/adam-smigielski-x-KLk5-p85-Cw-unsplash.jpg");
 }
 .heading {
   color: white;
@@ -141,6 +147,7 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  font-size: 2rem;
 }
 @media ( max-width: 500px ) {
   header nav a {
@@ -199,7 +206,7 @@ h5 {
   font-family: 'Montserrat', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h2 {
   font-size: 2.4rem;
@@ -220,7 +227,6 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
