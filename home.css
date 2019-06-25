@@ -1,0 +1,66 @@
+﻿ul {
+    margin-left: 50rem;
+}
+
+section {
+    background-image: url("http://sautiafrica.org/wp-content/uploads/2018/03/MarketTraining1-e1520025521838.jpg");
+    padding: 25rem;
+    margin-top: -5rem
+}
+
+.heading {
+    color: white;
+    margin-left: 45rem;
+    margin-top: -5rem;
+}
+
+.jumbotron {
+    margin-left: 15rem;
+    width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+    .jumbotron {
+        margin-left: -25rem;
+        width: 460px;
+        height: 300px
+    }
+}
+
+.section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .section {
+        margin-left: -45rem;
+    }
+}
+
+#red {
+    background-color: red
+}
+
+#green {
+    background-color: black;
+}
+
+.section-element {
+    margin-left: 45rem;
+    width: 50%;
+}
+
+.section-heading {
+    margin-top: 0rem;
+}
+
+.footer-text {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#yellow {
+    background-color: red;
+}
