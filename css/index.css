@@ -16,12 +16,6 @@ button {
 .fa-coffee {
   font-size: 200px;
 }
-img {
-  width: 60%;
-  position: absolute;
-  margin-left: -30rem;
-  margin-top: -30rem;
-}
 top-banner {
   height: auto;
   width: 100%;
@@ -54,13 +48,54 @@ mid-p {
   margin-left: 45rem;
   margin-top: -5rem;
 }
-.jumbotron {
+.mid-intro {
   margin-left: 15rem;
   width: 60%;
 }
 .section {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.tab {
+  width: 70%;
+  margin: 45px auto;
+  border: 1px solid #e84c3d;
+  box-shadow: 1px 1px 5px #e84c3d;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10rem;
+}
+.tab .box {
+  padding: 40px;
+}
+.tab .box .box-title {
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+@media ( max-width: 500px ) {
+  .content-destination {
+    width: 100%;
+  }
+}
+.content-destination img {
+  border-radius: 10px;
+}
+.sauti-logo {
+  height: 50px;
+  width: 100%;
+  margin: 0 0 80px 0;
+}
+@media ( max-width: 500px ) {
+  .sauti-logo {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+  }
 }
 .btn {
   justify-content: center;
@@ -109,7 +144,19 @@ mid-p {
 }
 .container {
   width: 100%;
-  margin: auto;
+  background-color: #1A1E23;
+}
+.top-img {
+  display: block;
+  margin: 30px auto;
+  width: 80%;
+}
+.logo-img {
+  margin: 5px auto;
+  height: auto;
+  width: 90%;
+  background-color: #1A1E23;
+  order: 1;
 }
 .top {
   justify-content: center;
@@ -193,6 +240,7 @@ html {
 html,
 body {
   font-family: 'Montserrat', sans-serif;
+  color: #fafafa;
 }
 h1,
 h2,
@@ -203,14 +251,17 @@ h5 {
 }
 h1 {
   font-size: 4rem;
+  color: #e84c3d;
 }
 h2 {
   font-size: 2.4rem;
   padding-bottom: 10px;
+  color: #e84c3d;
 }
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+  color: #e84c3d;
 }
 p {
   line-height: 1.5;
@@ -223,9 +274,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
   width: 100%;
-  margin: 0 auto;
 }
 .footer {
   width: 100%;
