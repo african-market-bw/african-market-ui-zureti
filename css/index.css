@@ -22,8 +22,14 @@ img {
   margin-left: -30rem;
   margin-top: -30rem;
 }
+top-banner {
+  height: auto;
+  width: 100%;
+}
+#banner {
+  width: 100%;
+}
 .intro {
-  background-image: url("http://sautiafrica.org/wp-content/uploads/2018/03/MarketTraining1-e1520025521838.jpg");
   height: 36rem;
 }
 @media ( max-width: 500px ) {
