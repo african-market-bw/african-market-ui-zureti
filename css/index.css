@@ -29,9 +29,6 @@ top-banner {
 #banner {
   width: 100%;
 }
-.intro {
-  height: 36rem;
-}
 @media ( max-width: 500px ) {
   .intro {
     justify-content: center;
