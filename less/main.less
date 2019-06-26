@@ -171,6 +171,51 @@ mid-p {
     }
   }
 
+///button
+
+#btn1 {
+  .border-radius(15px);
+  .center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // align-content: center;
+  // display: flex;
+  height: 45px;
+  width: 200px;
+  background-color: @highlight;
+  color: @white;
+  font-size: 1.8rem;
+  // .button-creator(200px, 45px, @highlight, @white, 1.8rem);     
+
+  @media @mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid @shark;
+    // margin: 0 15px 0 15px;
+
+  }
+}
+
+
+// .button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+//   .border-radius(15px);
+//   .center;
+//   width: @width;
+//   height: @height;
+//   background-color: @bg-color;
+//   color: @font-color;
+//   border: 1px solid @silver;
+//   cursor: pointer;
+//   font-size: @font-size;
+
+//   @media @mobile {
+//     width: 100%;
+//   }
+// }
+
   //Carousel
 
   // $('.responsive').slick({
