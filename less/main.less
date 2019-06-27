@@ -6,16 +6,14 @@ nav, h1, button {
   font-family: "Montserrat", sans-serif
 }
 
+.body {
+  margin: 0;
+  background-color: @shark;
+  // border: 5px solid red;
+}
 .fa-anchor, .fa-coffee {
   font-size: 200px
 }
-
-// img {
-  //     width: 60%;
-  //     position: absolute;
-  //     margin-left: -30rem;
-  //     margin-top: -30rem;
-  // }
   
   top-banner {
     height: auto;
@@ -115,6 +113,7 @@ mid-p {
           font-size: 24px;
           padding-bottom: 10px;
           font-weight: bold;
+          color: @white;
       }
 .content-destination {
         width: 75%;
@@ -128,85 +127,98 @@ mid-p {
           border-radius: 10px;
         }
       }
-
+      #faq {
+        font-size: 150%;
+        // background-color: @yellow;
+      }
 
 //button
-  .btn {
-    .center();
-    .custom-layout(flex-start, center);
+  // .btn {
+  //   .center();
+  //   .custom-layout(flex-start, center);
   
-    .button {
-        .custom-button();
-        border-radius: 5px;
-        background-color: @button-bg;
-        color: @main-bg;
-        width: 400px;
-        height: 3rem;
-    }
-    @media mobile {
-      width: 100%;
-    }
-  }
+  //   .button {
+  //       .custom-button();
+  //       border-radius: 5px;
+  //       background-color: @button-bg;
+  //       color: @main-bg;
+  //       width: 400px;
+  //       height: 3rem;
+  //   }
+  //   @media mobile {
+  //     width: 100%;
+  //   }
+  // }
+//Old Sign up and Log In buttons
+  // .signup {
+  //   background-color: #e84c3d;
+  //   color: white;
+  //   justify-content: center;
+  //   content-align: center;
+  //   display: flex;
 
-  .signup {
-    background-color: #e84c3d;
-    color: white;
-    justify-content: center;
-    content-align: center;
-    display: flex;
+  //   @media @mobile {
+  //     width: 100%;
+  //   }
+  // }
 
-    @media @mobile {
-      width: 100%;
-    }
-  }
-
-  .login {
-    background-color: @shark;
-    color: @highlight;
-    justify-content: center;
-    content-align: center;
-    display: flex;
+  // .login {
+  //   background-color: @shark;
+  //   color: @highlight;
+  //   justify-content: center;
+  //   content-align: center;
+  //   display: flex;
     
-    @media @mobile {
-      width: 100%;
-    }
-  }
+  //   @media @mobile {
+  //     width: 100%;
+  //   }
+  // }
 
 ///button
 
 #btn1 {
-  .border-radius(15px);
-  .center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // align-content: center;
-  // display: flex;
-  height: 45px;
-  // width: 200px;
-  width: 100%;
-  background-color: @highlight;
-  color: @white;
-  font-size: 1.8rem;
-  border: 10px solid @shark;
-  text-decoration: none;
-  // .button-creator(200px, 45px, @highlight, @white, 1.8rem);     
+  // border: 10px solid @shark;
+  color: #e84c3d;
+}
+#btn1:hover {
+  text-decoration: underline;
+  color: #e84c3d;
+  background-color: #D9910B;
 
   @media @mobile {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid @shark;
-    // margin: 0 15px 0 15px;
-
-  }
-
-  #btn a {
-    text-decoration: none;
-
+      color: #e84c3d;
   }
 }
+////old buttons
+// #btn1 {
+//   .border-radius(15px);
+//   .center;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 45px;
+//   width: 100%;
+//   background-color: @highlight;
+//   color: @white;
+//   font-size: 1.8rem;
+//   border: 10px solid @shark;
+//   text-decoration: none;
+  
+//   @media @mobile {
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 5px solid @shark;
+//     // margin: 0 15px 0 15px;
+
+//   }
+
+//   #btn a {
+//     text-decoration: none;
+
+//   }
+// }
 
 
 // .button-creator(@width, @height, @bg-color, @font-color, @font-size) {
@@ -262,3 +274,110 @@ mid-p {
   //     // instead of a settings object
   //   ]
   // });
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    // background: url(https://i.ibb.co/7YzXwvT/aaron-thomas-d-Pm-Cz-HQ7-Vc4-unsplash.jpg) no-repeat 50% 50%;
+    background: url(https://i.ibb.co/VqJGrsh/EE73-C81-B-27-B2-4-AD6-9-C45-4-F7-D4-A4-A1-BCA.jpg) no-repeat 50% 50%;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #D9910B;
+    /* color: #020873; */
+    text-shadow: 0 0 300px #1A1E23;
+    font-size: 500%;
+}
+
+.btn {
+    border-radius: 9px;
+    font-family: 'Oswald', sans-serif;
+    color: #020873;
+    font-size: 155%;
+    padding: 10px 20px;
+    border: 3px solid #020873;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: @yellow;
+      .center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+}
+
+.btn:hover {
+    color: #D9910B;
+    background-color: #1A1E23;
+    border: white;
+}
+
+p {
+    font-size: 160%;
+    line-height: 210%;
+    text-align: justify;
+    margin: 3%;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 250%;
+    }
+        .btn {
+            font-size: 110%;
+            padding: 7px 15px;
+        }
+        p {
+            font-size: 100%;
+            line-height: 100%;
+        }
+}
+
+////About page photos
+#about-img {
+  align-content: center;
+  justify-content: center;
+  // width: 70%;
+  // display: flex;
+}
+
+///Info text
+.info-text {
+  font-size: 1.5rem;
+  // text-align: justify;
+}
+.text {
+  line-height: 1.8;
+  font-size: 1.4rem;
+}

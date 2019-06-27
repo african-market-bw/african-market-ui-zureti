@@ -1,6 +1,7 @@
 #footer {
     width: 100%;
-    // border-top: 2px dashed silver;
+    margin-bottom: 0;
+    padding-bottom: 0;
     background-color: @highlight;
     
     p {
@@ -9,5 +10,9 @@
       color: @shark;
       font-size: 1.6rem;
       padding: 20px;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
