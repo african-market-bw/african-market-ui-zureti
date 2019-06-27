@@ -23,6 +23,18 @@ top-banner {
 #banner {
   width: 100%;
 }
+.sauti-logo {
+  width: 100%;
+  margin: 0 0 35px 0;
+}
+@media ( max-width: 500px ) {
+  .sauti-logo {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    margin: 0 0 80px 0;
+  }
+}
 @media ( max-width: 500px ) {
   .intro {
     justify-content: center;
@@ -85,18 +97,6 @@ mid-p {
 .content-destination img {
   border-radius: 10px;
 }
-.sauti-logo {
-  height: 50px;
-  width: 100%;
-  margin: 0 0 80px 0;
-}
-@media ( max-width: 500px ) {
-  .sauti-logo {
-    width: 100%;
-    height: auto;
-    max-height: 150px;
-  }
-}
 .btn {
   justify-content: center;
   display: flex;
@@ -150,10 +150,12 @@ mid-p {
   justify-content: center;
   align-items: center;
   height: 45px;
-  width: 200px;
+  width: 100%;
   background-color: #e84c3d;
   color: #fafafa;
   font-size: 1.8rem;
+  border: 10px solid #1A1E23;
+  text-decoration: none;
 }
 @media ( max-width: 500px ) {
   #btn1 {
@@ -163,6 +165,9 @@ mid-p {
     align-items: center;
     border: 5px solid #1A1E23;
   }
+}
+#btn1 #btn a {
+  text-decoration: none;
 }
 .container {
   width: 100%;
@@ -194,7 +199,6 @@ header {
   }
 }
 header nav {
-  margin-top: 40px;
   width: 768px;
   padding: 0 30px;
   justify-content: space-between;
@@ -220,7 +224,7 @@ header nav a {
     display: block;
     text-align: center;
     padding: 20px 0;
-    font-size: 20px;
+    font-size: 25px;
     border-bottom: 1px solid gray;
     background-color: #1A1E23;
     color: #fafafa;
@@ -299,15 +303,95 @@ img {
 .container {
   width: 100%;
 }
-.footer {
+#footer {
   width: 100%;
-  border-top: 2px dashed silver;
   background-color: #e84c3d;
 }
-.footer p {
+#footer p {
   justify-content: center;
   text-align: center;
   color: #1A1E23;
   font-size: 1.6rem;
   padding: 20px;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(https://i.ibb.co/7YzXwvT/aaron-thomas-d-Pm-Cz-HQ7-Vc4-unsplash.jpg) no-repeat 50% 50%;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.content h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #D9910B;
+  /* color: #020873; */
+  text-shadow: 0 0 300px #1A1E23;
+  font-size: 500%;
+}
+.btn {
+  border-radius: 9px;
+  font-family: 'Oswald', sans-serif;
+  color: #020873;
+  font-size: 135%;
+  padding: 10px 20px;
+  border: 3px solid #020873;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btn:hover {
+  color: #D9910B;
+  background-color: #1A1E23;
+  border: white;
+}
+p {
+  font-size: 160%;
+  line-height: 210%;
+  text-align: justify;
+  margin: 3%;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 250%;
+  }
+  .btn {
+    font-size: 110%;
+    padding: 7px 15px;
+  }
+  p {
+    font-size: 100%;
+    line-height: 100%;
+  }
 }
