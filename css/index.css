@@ -182,7 +182,7 @@ body {
 }
 .btn:hover {
   color: #e84c3d;
-  background-color: #1A1E23;
+  background-color: #020873;
   border: white;
 }
 p {
@@ -267,7 +267,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: #C0C0C0;
   font-size: 12px;
 }
 @media ( max-width: 500px ) {
@@ -278,7 +278,7 @@ header nav a {
     padding: 20px 0;
     font-size: 25px;
     border-bottom: 1px solid gray;
-    background-color: #1A1E23;
+    background-color: black;
     color: #fafafa;
   }
 }
@@ -289,6 +289,7 @@ header nav a:hover {
 @media ( max-width: 500px ) {
   header nav a:hover {
     color: #e84c3d;
+    background-color: #020873;
   }
 }
 @media ( max-width: 500px ) {
@@ -810,4 +811,27 @@ details[open] summary:hover::after {
   100% {
     background-color: #e68a12;
   }
+}
+.fadeIn {
+  animation: fadeIn 5s initial;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
