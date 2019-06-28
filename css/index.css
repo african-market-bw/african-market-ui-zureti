@@ -389,7 +389,7 @@ img {
   width: 100%;
 }
 .border-bottom-grey {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #e84c3d;
 }
 html,
 body {
