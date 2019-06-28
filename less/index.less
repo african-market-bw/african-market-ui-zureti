@@ -1,0 +1,53 @@
+@import '../less/main.less';
+@import '../less/nav.less';
+@import '../less/global.less';
+@import '../less/footer.less';
+@import '../less/variables.less';
+@import '../less/mixins.less';
+@import '../less/directory.less';
+@import '../less/faq.less';
+@import '../less/about.less';
+
+.btn {
+    width: 100%;
+    height: 100%;
+    animation: pulse 5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: rgb(7, 9, 121);
+    }
+    100% {
+      background-color: rgb(230, 138, 18);
+    }
+  }
+  
+.fadeIn {
+    animation: fadeIn 5s initial;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }

@@ -1,0 +1,84 @@
+// Mixins in here
+
+.center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-center(){ 
+width: 100%;
+display: block;
+text-align: center;
+}
+//custom-layout
+
+.custom-layout(@j, @a) {
+    display: flex;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.custom-button(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}
+
+.button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+    .border-radius(15px);
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid @silver;
+    cursor: pointer;
+    font-size: @font-size;
+  
+    @media @mobile {
+      width: 100%;
+    }
+}
+.center-nav(){
+    width: 100%;
+    padding: 0 30px;
+    justify-content: space-between;
+    display: flex;
+}
+
+//Parametric Animation 
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
+.width-100 {
+    width: 100%;
+  }
+  
+  .border-bottom-grey {
+    border-bottom: 1px solid @highlight;
+  }
+  
+  .flex(@jc: none, @ai: none, @dir: row) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+    flex-direction: @dir;
+  }
+  

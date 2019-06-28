@@ -1,0 +1,385 @@
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif
+}
+
+nav, h1, button {
+  font-family: "Montserrat", sans-serif
+}
+
+.body {
+  margin: 0;
+  background-color: @shark;
+  // border: 5px solid red;
+}
+.fa-anchor, .fa-coffee {
+  font-size: 200px
+}
+  
+  top-banner {
+    height: auto;
+    width: 100%;
+  }
+  #banner {
+    width: 100%;
+  }
+  
+  .sauti-logo {
+    // height: 50px;
+    width: 100%;
+    margin: 0 0 35px 0;
+    @media @mobile {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      margin: 0 0 80px 0;
+    }
+  }
+  
+  
+  //////
+  .intro {
+    // background-image: url("http://sautiafrica.org/wp-content/uploads/2018/03/MarketTraining1-e1520025521838.jpg");
+    // background-image: url("https://i.ibb.co/zXP7p9h/FFFC34-A6-5-F7-D-4-AE7-B200-E00-B29-BB90-DF.png");
+    // height: 36rem;
+    
+    
+
+  @media @mobile {
+    justify-content: center;
+  }
+}
+
+.mid {
+  justify-content: center;
+  display: block;
+  text-align: justify;
+}
+
+mid-p {
+  margin: 1rem;
+  text-align: justify;
+
+}
+
+.box {
+    padding: 0 50px;
+  }
+  
+  .home {
+  
+    .container home {
+        // padding: 90px 0 10px;
+        border-top: 2px dashed @navigation-border;
+    }
+  }
+ 
+
+  // home
+  .heading{color:white;
+    margin-left:45rem;
+    margin-top:-5rem;}
+    .mid-intro {
+      margin-left:15rem;
+      width:60%;}
+    .section{
+      padding-top:5rem;
+     padding-bottom:5rem;
+      
+    }
+
+//tabs
+
+.tab {
+  width: 70%;
+  margin: 45px auto;
+  border: 1px solid #e84c3d;
+  box-shadow: 1px 1px 5px #e84c3d;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10rem;
+  
+  @media @mobile {
+      .container() {
+          display: none;
+      }
+  }
+}
+
+  .tab .box {
+      padding: 40px;
+  }
+
+      .tab .box .box-title {
+          font-size: 24px;
+          padding-bottom: 10px;
+          font-weight: bold;
+          color: @white;
+      }
+.content-destination {
+        width: 75%;
+        margin: 0 auto 30px;
+    
+        @media @mobile {
+          width: 100%;
+        }
+    
+        img {
+          border-radius: 10px;
+        }
+      }
+      #faq {
+        font-size: 150%;
+        // background-color: @yellow;
+      }
+
+//button
+  // .btn {
+  //   .center();
+  //   .custom-layout(flex-start, center);
+  
+  //   .button {
+  //       .custom-button();
+  //       border-radius: 5px;
+  //       background-color: @button-bg;
+  //       color: @main-bg;
+  //       width: 400px;
+  //       height: 3rem;
+  //   }
+  //   @media mobile {
+  //     width: 100%;
+  //   }
+  // }
+//Old Sign up and Log In buttons
+  // .signup {
+  //   background-color: #e84c3d;
+  //   color: white;
+  //   justify-content: center;
+  //   content-align: center;
+  //   display: flex;
+
+  //   @media @mobile {
+  //     width: 100%;
+  //   }
+  // }
+
+  // .login {
+  //   background-color: @shark;
+  //   color: @highlight;
+  //   justify-content: center;
+  //   content-align: center;
+  //   display: flex;
+    
+  //   @media @mobile {
+  //     width: 100%;
+  //   }
+  // }
+
+///button
+
+#btn1 {
+  // border: 10px solid @shark;
+  color: #e84c3d;
+}
+#btn1:hover {
+  text-decoration: underline;
+  color: #e84c3d;
+  background-color: #D9910B;
+
+  @media @mobile {
+      color: #e84c3d;
+  }
+}
+////old buttons
+// #btn1 {
+//   .border-radius(15px);
+//   .center;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 45px;
+//   width: 100%;
+//   background-color: @highlight;
+//   color: @white;
+//   font-size: 1.8rem;
+//   border: 10px solid @shark;
+//   text-decoration: none;
+  
+//   @media @mobile {
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 5px solid @shark;
+//     // margin: 0 15px 0 15px;
+
+//   }
+
+//   #btn a {
+//     text-decoration: none;
+
+//   }
+// }
+
+
+// .button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+//   .border-radius(15px);
+//   .center;
+//   width: @width;
+//   height: @height;
+//   background-color: @bg-color;
+//   color: @font-color;
+//   border: 1px solid @silver;
+//   cursor: pointer;
+//   font-size: @font-size;
+
+//   @media @mobile {
+//     width: 100%;
+//   }
+// }
+
+  //Carousel
+
+  // $('.responsive').slick({
+  //   dots: true,
+  //   infinite: false,
+  //   speed: 300,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 4,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 3,
+  //         infinite: true,
+  //         dots: true
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 2
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1
+  //       }
+  //     }
+  //     // You can unslick at a given breakpoint now by adding:
+  //     // settings: "unslick"
+  //     // instead of a settings object
+  //   ]
+  // });
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    // background: url(https://i.ibb.co/7YzXwvT/aaron-thomas-d-Pm-Cz-HQ7-Vc4-unsplash.jpg) no-repeat 50% 50%;
+    background: url(https://i.ibb.co/VqJGrsh/EE73-C81-B-27-B2-4-AD6-9-C45-4-F7-D4-A4-A1-BCA.jpg) no-repeat 50% 50%;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #D9910B;
+    /* color: #020873; */
+    text-shadow: 0 0 300px #1A1E23;
+    font-size: 500%;
+}
+
+.btn {
+    border-radius: 9px;
+    font-family: 'Oswald', sans-serif;
+    color: #020873;
+    font-size: 155%;
+    padding: 10px 20px;
+    border: 3px solid #020873;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: @yellow;
+      .center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+}
+
+.btn:hover {
+    // color: #D9910B;
+    color: @highlight;
+    // background-color: #1A1E23;
+    background-color: @blue;
+    border: white;
+}
+
+p {
+    font-size: 160%;
+    line-height: 210%;
+    text-align: justify;
+    margin: 3%;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 250%;
+    }
+        .btn {
+            font-size: 110%;
+            padding: 7px 15px;
+        }
+        p {
+            font-size: 100%;
+            line-height: 100%;
+        }
+}
+
+////About page photos
+#about-img {
+  align-content: center;
+  justify-content: center;
+  // width: 70%;
+  // display: flex;
+}
+
+///Info text
+.info-text {
+  font-size: 1.5rem;
+  // text-align: justify;
+}
+.text {
+  line-height: 1.8;
+  font-size: 1.4rem;
+}
