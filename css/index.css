@@ -468,13 +468,16 @@ body {
   width: 100%;
 }
 .intro1 {
-  height: 100%;
-  width: 100%;
+  height: 400px;
+  width: 80%;
   margin: auto;
-  background: url(https://i.ibb.co/2MSV3rW/0-C6-F530-B-3-B99-4935-80-F7-DE9404-AA61-CF.jpg) no-repeat 50% 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: url(https://i.ibb.co/g4GDZWN/bean-black-rice-cereal-1537169.jpg) no-repeat 50% 50%;
   display: table;
   top: 0;
   background-size: cover;
+  border-radius: 9px;
 }
 .intro1 .inner1 {
   display: table-cell;
