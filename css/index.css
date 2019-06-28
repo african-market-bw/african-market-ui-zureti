@@ -181,7 +181,7 @@ body {
   width: 100%;
 }
 .btn:hover {
-  color: #D9910B;
+  color: #e84c3d;
   background-color: #1A1E23;
   border: white;
 }
@@ -449,5 +449,176 @@ p {
   p {
     font-size: 100%;
     line-height: 100%;
+  }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.intro1 {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(https://i.ibb.co/2MSV3rW/0-C6-F530-B-3-B99-4935-80-F7-DE9404-AA61-CF.jpg) no-repeat 50% 50%;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+.intro1 .inner1 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+.back {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.back h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #D9910B;
+  /* color: #020873; */
+  text-shadow: 0 0 300px #1A1E23;
+  font-size: 500%;
+}
+.btn {
+  border-radius: 9px;
+  font-family: 'Oswald', sans-serif;
+  color: #020873;
+  font-size: 155%;
+  padding: 10px 20px;
+  border: 3px solid #020873;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #D9910B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+}
+.btn:hover {
+  color: #e84c3d;
+  background-color: #1A1E23;
+  border: white;
+}
+p {
+  font-size: 160%;
+  line-height: 210%;
+  text-align: justify;
+  margin: 3%;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 250%;
+  }
+  .btn {
+    font-size: 110%;
+    padding: 7px 15px;
+  }
+  p {
+    font-size: 100%;
+    line-height: 100%;
+  }
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+h2 {
+  margin: 20px auto 80px;
+  font-size: 38px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+details {
+  width: 75%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 45px 70px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+details + details {
+  margin-top: 20px;
+}
+details[open] {
+  min-height: 50px;
+  background-color: #e84c3d;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+details p {
+  color: #020873;
+  font-weight: 300;
+}
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+summary:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #f6f7f8, 0 0 0 5px rebeccapurple;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+.control-icon {
+  fill: rebeccapurple;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+.control-icon-close {
+  display: none;
+}
+details[open] .control-icon-close {
+  display: initial;
+  transition: 0.3s ease;
+}
+details[open] .control-icon-expand {
+  display: none;
+}
+details[open] summary:hover::after {
+  animation: pulse 1s ease;
+}
+@keyframes pulse {
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.btn {
+  width: 100%;
+  height: 100%;
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #070979;
+  }
+  100% {
+    background-color: #e68a12;
   }
 }
